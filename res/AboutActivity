@@ -1,0 +1,22 @@
+package your.package.name; // Replace with your actual package name
+
+import android.os.Bundle;
+import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class AboutActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_about);
+
+        // Display student details on the About page
+        TextView aboutTextView = findViewById(R.id.aboutTextView);
+        aboutTextView.setText("Name: NOOR AZIZAH BINTI AHMAD BOILAN\n" +
+                "Group: RCS2405A\n" +
+                "Student Number: 2021715549\n" +
+                "Programme Code: CS240");
+    }
+}
